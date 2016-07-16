@@ -1,13 +1,14 @@
 .gallery-container
-  width: 100%
   margin-top: 2rem
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
 
 .card
+  margin: 0.5rem
   vertical-align: top
-  display: block
   border-radius: 3px
-  max-width: 370px
-  margin-bottom: 1.5rem
+  width: 370px
   background-color: $white
   font-family: $font-main
   color: $copy
@@ -44,14 +45,7 @@
   display: inline-block
 
 @media screen and (min-width: $break-small)
-  .gallery-container
-    text-align: center
-
   .card
-    display: inline-block
-    margin-left: 0.75rem
-    margin-right: 0.75rem
-
     p
       max-width: 11rem
       margin-top: 1.5rem
