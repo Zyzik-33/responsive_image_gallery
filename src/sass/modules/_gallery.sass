@@ -3,8 +3,10 @@
   margin-top: 2rem
 
 .card
+  vertical-align: top
+  display: block
   border-radius: 3px
-  max-width: 666px
+  max-width: 370px
   margin-bottom: 1.5rem
   background-color: $white
   font-family: $font-main
@@ -14,7 +16,8 @@
     max-width: 100%
 
   p
-    min-width: 5rem
+    height: 3rem
+    text-align: left
     max-width: 11rem
     margin-top: 1.25rem
     padding-bottom: 1.25rem
@@ -41,24 +44,23 @@
   display: inline-block
 
 @media screen and (min-width: $break-small)
+  .gallery-container
+    text-align: center
+
   .card
+    display: inline-block
+    margin-left: 0.75rem
+    margin-right: 0.75rem
 
     p
-      min-width: 5rem
       max-width: 11rem
       margin-top: 1.5rem
       padding-bottom: 1.5rem
       margin-left: 1.5rem
 
     svg
-      border-left: 1px solid $medium-gray
-      margin-top: -0.25rem
-      height: 1.75rem
       width: 3.25rem
-      display: inline-block
 
   .card-detail
     margin-top: 1.5rem
     margin-right: 1.5rem
-    margin-left: 1.5rem
-    display: inline-block
