@@ -5,6 +5,6 @@
 
 # Run
 
-* `gulp` or `npm start`
+* `npm start`
 
 
